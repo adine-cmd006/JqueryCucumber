@@ -1,0 +1,1555 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-18T08:31:31.637Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15418000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Add classes animation use",
+        "description": "",
+        "id": "effects-functions;add-classes-animation-use",
+        "after": [
+          {
+            "result": {
+              "duration": 5134000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2330000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click Add Class button",
+            "match": {
+              "location": "com.jquery.step_definitions.Effects_steps.user_click_add_class_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1605000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User run effect",
+            "match": {
+              "location": "com.jquery.step_definitions.Effects_steps.user_run_effect()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify the effect change",
+            "match": {
+              "location": "com.jquery.step_definitions.Effects_steps.user_verify_the_effect_change()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          },
+          {
+            "name": "@effects"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:31:56.643Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9981000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Animate the properties of elements between colors use",
+        "description": "",
+        "id": "effects-functions;animate-the-properties-of-elements-between-colors-use",
+        "after": [
+          {
+            "result": {
+              "duration": 7919000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click Color Animation button",
+            "match": {
+              "location": "com.jquery.step_definitions.Effects_steps.user_click_color_animation_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 409000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click Toggle Effect",
+            "match": {
+              "location": "com.jquery.step_definitions.Effects_steps.user_click_toggle_effect()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 433000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User displays what color used in animation",
+            "match": {
+              "location": "com.jquery.step_definitions.Effects_steps.user_displays_what_color_used_in_animation()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@effects"
+          }
+        ]
+      }
+    ],
+    "name": "Effects Functions",
+    "description": "",
+    "id": "effects-functions",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/effects.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-18T08:32:17.489Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9288000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Draggable function use",
+        "description": "",
+        "id": "interactions-section;draggable-function-use",
+        "after": [
+          {
+            "result": {
+              "duration": 5882000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2706000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click draggable button",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_click_draggable_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 804000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User drag the element to the XAndYLocation",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_drag_the_element_to_the_XAndYLocation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify if drag item is on the XAndYLocation",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_verify_if_drag_item_is_on_the_XAndYLocation()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@interactions"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:32:36.318Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10838000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Droppable function use",
+        "description": "",
+        "id": "interactions-section;droppable-function-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4322000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1938000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click droppable button",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_click_droppable_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 586000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User drag the element and drop the element",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_drag_the_element_and_drop_the_element()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User verify if drag item is on drop element",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_verify_if_drag_item_is_on_drop_element()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          },
+          {
+            "name": "@interactions"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:32:54.181Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8826000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Resizable function use",
+        "description": "",
+        "id": "interactions-section;resizable-function-use",
+        "after": [
+          {
+            "result": {
+              "duration": 6472000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1613000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click resizable button",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_click_resizable_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 688000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User resize the element to the point",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_resize_the_element_to_the_point()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 502000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User verify if resize item is on point",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_verify_if_resize_item_is_on_point()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@interactions"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:33:12.313Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10903000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Selectable function use",
+        "description": "",
+        "id": "interactions-section;selectable-function-use",
+        "after": [
+          {
+            "result": {
+              "duration": 5374000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2114000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click selectable button",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_click_selectable_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 450000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User select random items",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_select_random_items()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 508000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User verify if items are selected",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_verify_if_items_are_selected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@interactions"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:33:31.733Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9440000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Sortable function use",
+        "description": "",
+        "id": "interactions-section;sortable-function-use",
+        "after": [
+          {
+            "result": {
+              "duration": 5088000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1769000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User click sortable button",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_click_sortable_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 533000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User sort the element randomly",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_sort_the_element_randomly()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 870000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User print changed item list",
+            "match": {
+              "location": "com.jquery.step_definitions.Interactions_steps.user_print_changed_item_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@interactions"
+          }
+        ]
+      }
+    ],
+    "name": "Interactions Section",
+    "description": "",
+    "id": "interactions-section",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/interactions.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-18T08:33:49.459Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9158000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Position the element use",
+        "description": "",
+        "id": "utilities-functions;position-the-element-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4792000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2473000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click Position button",
+            "match": {
+              "location": "com.jquery.step_definitions.Utilities_steps.user_click_position_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User get the location of position",
+            "match": {
+              "location": "com.jquery.step_definitions.Utilities_steps.user_get_the_location_of_position()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1064000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify if the position location changed",
+            "match": {
+              "location": "com.jquery.step_definitions.Utilities_steps.user_verify_if_the_position_location_changed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@utilities"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:34:07.084Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10176000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Widget Factory use",
+        "description": "",
+        "id": "utilities-functions;widget-factory-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4560000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1731000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click Widget Factory button",
+            "match": {
+              "location": "com.jquery.step_definitions.Utilities_steps.user_click_widget_factory_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 309000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User selects Go green button",
+            "match": {
+              "location": "com.jquery.step_definitions.Utilities_steps.user_selects_go_green_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 616000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User change the color and check if it is still green",
+            "match": {
+              "location": "com.jquery.step_definitions.Utilities_steps.user_change_the_color_and_check_if_it_is_still_green()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          },
+          {
+            "name": "@utilities"
+          }
+        ]
+      }
+    ],
+    "name": "utilities functions",
+    "description": "",
+    "id": "utilities-functions",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/utilities.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-18T08:34:24.495Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7259000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Displays collapsible content panel use",
+        "description": "",
+        "id": "widgets-sections;displays-collapsible-content-panel-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4816000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1282000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click Accordion button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_accordion_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 304000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click random section",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_random_section()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 234000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User shows the content of the section",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_shows_the_content_of_the_section()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:34:38.432Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4275000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "AutoComplete use",
+        "description": "",
+        "id": "widgets-sections;autocomplete-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4051000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1463000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click Autocomplete button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_autocomplete_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3488000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User type into the field",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_type_into_the_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6575000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User check if the text are in tags field",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_check_if_the_text_are_in_tags_field()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:34:58.310Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7626000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Buttons use",
+        "description": "",
+        "id": "widgets-sections;buttons-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4341000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1155000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click Button button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_button_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks the buttons",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_clicks_the_buttons()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User check if the buttons is clicked",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_check_if_the_buttons_is_clicked()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:35:11.499Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4983000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "CheckBoxRadio use",
+        "description": "",
+        "id": "widgets-sections;checkboxradio-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4707000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1361000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User click CheckBoxRadio button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_checkboxradio_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 250000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User click checkboxes on each group",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_checkboxes_on_each_group()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User check if the checkboxed are selected",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_check_if_the_checkboxed_are_selected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:35:22.921Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6655000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "ControlGroup use",
+        "description": "",
+        "id": "widgets-sections;controlgroup-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4309000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2372000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User click ControlGroup button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_control_group_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1200000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User select the each option",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_select_the_each_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 286000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User book the car",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_book_the_car()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:35:37.760Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6774000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "DatePicker use",
+        "description": "",
+        "id": "widgets-sections;datepicker-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4654000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1647000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User click DatePicker button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_datepicker_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3677000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User select the date",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_select_the_date()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User check if the date is selected",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_check_if_the_date_is_selected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          },
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:35:54.610Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6280000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Dialog window use",
+        "description": "",
+        "id": "widgets-sections;dialog-window-use",
+        "after": [
+          {
+            "result": {
+              "duration": 5712000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1204000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User click Dialog button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_dialog_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 429000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User closed the dialog button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_closed_the_dialog_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User check if dialog is closed",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_check_if_dialog_is_closed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:36:08.294Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5360000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "Menu use",
+        "description": "",
+        "id": "widgets-sections;menu-use",
+        "after": [
+          {
+            "result": {
+              "duration": 3832000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1089000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User click menu button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_menu_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6628000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User order classic rock music",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_order_classic_rock_music()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User check if selected correct music",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_check_if_selected_correct_music()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:36:25.214Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4691000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "Progressbar use",
+        "description": "",
+        "id": "widgets-sections;progressbar-use",
+        "after": [
+          {
+            "result": {
+              "duration": 4800000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1417000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User click Progressbar button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_progressbar_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User check status of Progressbar",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_check_status_of_progressbar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User displays status of Progressbar",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_displays_status_of_progressbar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:36:36.242Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5150000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "Slider use",
+        "description": "",
+        "id": "widgets-sections;slider-use",
+        "after": [
+          {
+            "result": {
+              "duration": 5046000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1683000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "User click Slider button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_slider_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 862000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User Slide the slider to the end",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_slide_the_slider_to_the_end()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User check if the slider is at the end",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_check_if_the_slider_is_at_the_end()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@widgets"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-18T08:36:49.050Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5650000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.beforeEachScenario()"
+            }
+          }
+        ],
+        "line": 67,
+        "name": "Tooltip use",
+        "description": "",
+        "id": "widgets-sections;tooltip-use",
+        "after": [
+          {
+            "result": {
+              "duration": 5428000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.jquery.base.Hook.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 908000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "User click into Tooltip button",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_click_into_tooltip_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2449000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "User Selects Tooltips",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_selects_tooltips()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User Displays the tooltips information",
+            "match": {
+              "location": "com.jquery.step_definitions.Widgets_steps.user_displays_the_tooltips_information()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@widgets"
+          }
+        ]
+      }
+    ],
+    "name": "widgets sections",
+    "description": "",
+    "id": "widgets-sections",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/widgets.feature",
+    "tags": []
+  }
+]

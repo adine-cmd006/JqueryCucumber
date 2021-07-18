@@ -1,0 +1,1410 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Smoke Test</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 18, 2021 04:31:27 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 18, 2021 04:31:27 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 18, 2021 04:37:03 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>4</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>20</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>60</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Effects Functions":45.55,"Interactions Section":91.935,"utilities functions":35.014,"widgets sections":159.032
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@effects</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@widgets</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@utilities</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@smokeTest</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@interactions</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>8.1</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 20,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 60,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@effects</a><a class="dropdown-item" href="#">@widgets</a><a class="dropdown-item" href="#">@utilities</a><a class="dropdown-item" href="#">@smokeTest</a><a class="dropdown-item" href="#">@interactions</a><a class="dropdown-item" href="#">@regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Effects Functions</p>
+            <p class="text-sm">
+              <span>04:31:31 AM</span> / <span>00:00:45:550</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Effects Functions</h5>
+<span class='badge badge-success'>07.18.2021 04:31:31</span>
+<span class='badge badge-danger'>07.18.2021 04:32:17</span>
+<span class='badge badge-default'>00:00:45:550</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Add classes animation use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Effects_steps.user_click_add_class_button()">
+                <span>Given User click Add Class button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Effects_steps.user_run_effect()">
+                <span>When User run effect</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Effects_steps.user_verify_the_effect_change()">
+                <span>Then User verify the effect change</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Animate the properties of elements between colors use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Effects_steps.user_click_color_animation_button()">
+                <span>Given User click Color Animation button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Effects_steps.user_click_toggle_effect()">
+                <span>When User click Toggle Effect</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Effects_steps.user_displays_what_color_used_in_animation()">
+                <span>Then User displays what color used in animation</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Interactions Section</p>
+            <p class="text-sm">
+              <span>04:32:17 AM</span> / <span>00:01:31:935</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Interactions Section</h5>
+<span class='badge badge-success'>07.18.2021 04:32:17</span>
+<span class='badge badge-danger'>07.18.2021 04:33:49</span>
+<span class='badge badge-default'>00:01:31:935</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Draggable function use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_click_draggable_button()">
+                <span>Given User click draggable button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_drag_the_element_to_the_XAndYLocation()">
+                <span>When User drag the element to the XAndYLocation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_verify_if_drag_item_is_on_the_XAndYLocation()">
+                <span>Then User verify if drag item is on the XAndYLocation</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Droppable function use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_click_droppable_button()">
+                <span>Given User click droppable button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_drag_the_element_and_drop_the_element()">
+                <span>When User drag the element and drop the element</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_verify_if_drag_item_is_on_drop_element()">
+                <span>Then User verify if drag item is on drop element</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Resizable function use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_click_resizable_button()">
+                <span>Given User click resizable button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_resize_the_element_to_the_point()">
+                <span>When User resize the element to the point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_verify_if_resize_item_is_on_point()">
+                <span>Then User verify if resize item is on point</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>Selectable function use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_click_selectable_button()">
+                <span>Given User click selectable button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_select_random_items()">
+                <span>When User select random items</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_verify_if_items_are_selected()">
+                <span>Then User verify if items are selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>Sortable function use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_click_sortable_button()">
+                <span>Given User click sortable button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_sort_the_element_randomly()">
+                <span>When User sort the element randomly</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Interactions_steps.user_print_changed_item_list()">
+                <span>Then User print changed item list</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">utilities functions</p>
+            <p class="text-sm">
+              <span>04:33:49 AM</span> / <span>00:00:35:014</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">utilities functions</h5>
+<span class='badge badge-success'>07.18.2021 04:33:49</span>
+<span class='badge badge-danger'>07.18.2021 04:34:24</span>
+<span class='badge badge-default'>00:00:35:014</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>Position the element use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Utilities_steps.user_click_position_button()">
+                <span>Given User click Position button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Utilities_steps.user_get_the_location_of_position()">
+                <span>When User get the location of position</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Utilities_steps.user_verify_if_the_position_location_changed()">
+                <span>Then User verify if the position location changed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>Widget Factory use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Utilities_steps.user_click_widget_factory_button()">
+                <span>Given User click Widget Factory button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Utilities_steps.user_selects_go_green_button()">
+                <span>When User selects Go green button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Utilities_steps.user_change_the_color_and_check_if_it_is_still_green()">
+                <span>Then User change the color and check if it is still green</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">widgets sections</p>
+            <p class="text-sm">
+              <span>04:34:24 AM</span> / <span>00:02:39:032</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">widgets sections</h5>
+<span class='badge badge-success'>07.18.2021 04:34:24</span>
+<span class='badge badge-danger'>07.18.2021 04:37:03</span>
+<span class='badge badge-default'>00:02:39:032</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>Displays collapsible content panel use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_accordion_button()">
+                <span>Given User click Accordion button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_random_section()">
+                <span>When User click random section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_shows_the_content_of_the_section()">
+                <span>Then User shows the content of the section</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>AutoComplete use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_autocomplete_button()">
+                <span>Given User click Autocomplete button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_type_into_the_field()">
+                <span>When User type into the field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_check_if_the_text_are_in_tags_field()">
+                <span>Then User check if the text are in tags field</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>Buttons use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_button_button()">
+                <span>Given User click Button button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_clicks_the_buttons()">
+                <span>When User clicks the buttons</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_check_if_the_buttons_is_clicked()">
+                <span>Then User check if the buttons is clicked</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="77"><span class="badge log pass-bg mr-2">Pass</span>CheckBoxRadio use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_checkboxradio_button()">
+                <span>Given User click CheckBoxRadio button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_checkboxes_on_each_group()">
+                <span>When User click checkboxes on each group</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_check_if_the_checkboxed_are_selected()">
+                <span>Then User check if the checkboxed are selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>ControlGroup use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_control_group_button()">
+                <span>Given User click ControlGroup button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_select_the_each_option()">
+                <span>When User select the each option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_book_the_car()">
+                <span>Then User book the car</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>DatePicker use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_datepicker_button()">
+                <span>Given User click DatePicker button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_select_the_date()">
+                <span>When User select the date</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_check_if_the_date_is_selected()">
+                <span>Then User check if the date is selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Dialog window use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_dialog_button()">
+                <span>Given User click Dialog button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_closed_the_dialog_button()">
+                <span>When User closed the dialog button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_check_if_dialog_is_closed()">
+                <span>Then User check if dialog is closed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>Menu use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_menu_button()">
+                <span>Given User click menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_order_classic_rock_music()">
+                <span>When User order classic rock music</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_check_if_selected_correct_music()">
+                <span>Then User check if selected correct music</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Progressbar use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_progressbar_button()">
+                <span>Given User click Progressbar button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_check_status_of_progressbar()">
+                <span>When User check status of Progressbar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_displays_status_of_progressbar()">
+                <span>Then User displays status of Progressbar</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>Slider use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_slider_button()">
+                <span>Given User click Slider button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_slide_the_slider_to_the_end()">
+                <span>When User Slide the slider to the end</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_check_if_the_slider_is_at_the_end()">
+                <span>Then User check if the slider is at the end</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>Tooltip use</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_click_into_tooltip_button()">
+                <span>Given User click into Tooltip button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_selects_tooltips()">
+                <span>When User Selects Tooltips</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.jquery.step_definitions.Widgets_steps.user_displays_the_tooltips_information()">
+                <span>Then User Displays the tooltips information</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@effects</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@effects</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:31:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Add classes animation use</a>
+<div class="">
+<span class="badge badge-default">Effects Functions.Add classes animation use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:31:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Animate the properties of elements between colors use</a>
+<div class="">
+<span class="badge badge-default">Effects Functions.Animate the properties of elements between colors use</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+</span>
+<p class="name">@widgets</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@widgets</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:34:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='59'>Displays collapsible content panel use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.Displays collapsible content panel use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:34:38 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='65'>AutoComplete use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.AutoComplete use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:34:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='71'>Buttons use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.Buttons use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:35:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='77'>CheckBoxRadio use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.CheckBoxRadio use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:35:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='83'>ControlGroup use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.ControlGroup use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:35:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='89'>DatePicker use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.DatePicker use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:35:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='95'>Dialog window use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.Dialog window use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:36:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='101'>Menu use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.Menu use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:36:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='107'>Progressbar use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.Progressbar use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:36:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='113'>Slider use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.Slider use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:36:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='119'>Tooltip use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.Tooltip use</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@utilities</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@utilities</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:33:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='46'>Position the element use</a>
+<div class="">
+<span class="badge badge-default">utilities functions.Position the element use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:34:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='52'>Widget Factory use</a>
+<div class="">
+<span class="badge badge-default">utilities functions.Widget Factory use</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@smokeTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smokeTest</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:31:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Add classes animation use</a>
+<div class="">
+<span class="badge badge-default">Effects Functions.Add classes animation use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:32:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='21'>Droppable function use</a>
+<div class="">
+<span class="badge badge-default">Interactions Section.Droppable function use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:34:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='52'>Widget Factory use</a>
+<div class="">
+<span class="badge badge-default">utilities functions.Widget Factory use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:35:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='89'>DatePicker use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.DatePicker use</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@interactions</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@interactions</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:32:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>Draggable function use</a>
+<div class="">
+<span class="badge badge-default">Interactions Section.Draggable function use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:32:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='21'>Droppable function use</a>
+<div class="">
+<span class="badge badge-default">Interactions Section.Droppable function use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:32:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='27'>Resizable function use</a>
+<div class="">
+<span class="badge badge-default">Interactions Section.Resizable function use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:33:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='33'>Selectable function use</a>
+<div class="">
+<span class="badge badge-default">Interactions Section.Selectable function use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:33:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='39'>Sortable function use</a>
+<div class="">
+<span class="badge badge-default">Interactions Section.Sortable function use</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:31:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Animate the properties of elements between colors use</a>
+<div class="">
+<span class="badge badge-default">Effects Functions.Animate the properties of elements between colors use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:32:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>Draggable function use</a>
+<div class="">
+<span class="badge badge-default">Interactions Section.Draggable function use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:33:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='33'>Selectable function use</a>
+<div class="">
+<span class="badge badge-default">Interactions Section.Selectable function use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:33:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='46'>Position the element use</a>
+<div class="">
+<span class="badge badge-default">utilities functions.Position the element use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:34:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='59'>Displays collapsible content panel use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.Displays collapsible content panel use</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>04:35:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='77'>CheckBoxRadio use</a>
+<div class="">
+<span class="badge badge-default">widgets sections.CheckBoxRadio use</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
